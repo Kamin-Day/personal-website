@@ -1,0 +1,82 @@
+body{
+	margin: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.25;
+    letter-spacing: 1px;
+}
+
+
+
+.Page-Header{
+	background-color: rgb(64,64,64);
+	padding: 25px;
+	position: relative;
+	padding-bottom:25px;
+
+}
+
+.Page-Title{	
+	float: left;
+	
+}
+
+.Header-Main-Title{
+	color: rgb(230,230,230);
+	font-size: 1.25em;
+}
+
+.Header-Sub-Title{
+	color: rgb(168,168,168);
+	font-size: .8em;
+}
+
+.Hamburger-Holder{
+	float:right;
+	margin-top: 10px;
+}
+
+.Hamburger{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(240,240,240);
+    margin: 3px 0;
+
+}
+
+.Content{
+
+}
+
+.Content-Navigation{
+	position:relative;
+	background-color: rgb(244, 242, 240);
+}
+
+.Navigation-Icons{
+	float:left;
+}
+#Git{
+	background-image: url(/images/GitHub-Mark-32px.png)
+}
+
+.Navigation-Links{
+	float:right;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
