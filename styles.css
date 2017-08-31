@@ -1,14 +1,20 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body{
 	margin: 0;
     font-family: 'Open Sans', sans-serif, "Helvetica", "Arial";
-    line-height: 1.4;
-    letter-spacing: 1px;
 }
 h1{
 	font-size: 1.8em;
 	color: rgb(80,80,80);
 	font-weight:bold;
-	line-height: 1.25;
+	
 }
 
 h2{
@@ -46,13 +52,13 @@ a{
 
 ul.s {
 	list-style-type: square;
+	padding-left:29px;
 
 }
 
 li{
 	padding-right: 3px;
 	margin-bottom: 5px;
-	margin-left: -10px;
 	color: rgb(64,64,64);
 	font-size: .9em;
 }
@@ -79,6 +85,7 @@ h2.indexYear{
 	background: url("/images/hero.jpg") no-repeat;
 	height: 300px;
 	background-size: cover;
+	background-position-y: center;
 
 }
 
@@ -105,7 +112,7 @@ h2.indexYear{
 .article-preview p {
 	color: rgb(170,170,170);
 	line-height: 1.6;
-	font-size: .7em;
+	font-size: 1.1em;
 }
 
 .article-title{
@@ -141,7 +148,7 @@ h2.indexYear{
 
 .contactHeader{
 	font-size: 1.4em;
-	margin-bottom:25px;
+	margin-bottom:18px;
 }
 
 .Page-Header{
@@ -149,10 +156,12 @@ h2.indexYear{
 	padding: 25px;
 	position: relative;
 	padding-bottom:25px;
+	z-index: 1;
 }
 
 .Page-Title{	
 	float: left;
+	cursor: pointer;
 	
 }
 
@@ -168,7 +177,8 @@ h2.indexYear{
 
 .Hamburger-Holder{
 	float:right;
-	margin-top: 10px;
+	margin-top: 12px;
+	cursor: pointer;
 }
 
 .Hamburger{
@@ -176,6 +186,9 @@ h2.indexYear{
     height: 2px;
     background-color: rgb(240,240,240);
     margin: 3px 0;
+}
+#Hamburger-Button{
+	width:20px;
 }
 
 .Content{
@@ -191,11 +204,14 @@ h2.indexYear{
 }
 
 .Content-Navigation{
-	position:relative;
+	position:absolute;
+	width:100%;
 	background-color: rgb(244, 242, 240);
 	padding:20px;
 	padding-top:25px;
 	box-shadow: 0px 2px 2px rgb(224,224,224);
+	margin-top: -500px;
+	transition: margin-top 0.5s ease;
 }
 
 .Navigation-Icons{
@@ -234,7 +250,6 @@ h2.indexYear{
 
 .Navigation-Links{
 	float:right;
-	word-spacing: 20px;
 }
 
 a.Nav-Link {
@@ -248,6 +263,16 @@ a.Navigation-Links {
 	float:right;
 	word-spacing: 20px;
 	
+}
+
+@media (min-width: 570px) {
+	.Header-Main-Title{
+		color: rgb(230,230,230);
+		font-size: 5em;
+	}
+	
+
+
 }
 
 .cf:before,
