@@ -17,6 +17,16 @@ window.addEventListener("load", function(){
 		location.href ="/";
 	});
 
+	window.addEventListener("resize", function(){
+		var viewport = document.documentElement.clientWidth;
+		var nav = document.getElementsByClassName("Content-Navigation")[0];
+		if (viewport >= 570){
+			nav.style.marginTop = "-500px";
+		}
+
+	});
+	
+	
 });
 
 
