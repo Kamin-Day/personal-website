@@ -24,7 +24,7 @@ window.addEventListener("load", function(){
 			nav.style.marginTop = "-500px";
 		}
 
-	});
+	});	
 	
 	
 });

@@ -109,6 +109,11 @@ h2.indexYear{
 
 }
 
+.article-preview-image{
+	width: 0px;
+	height: 0px;
+}	
+
 .article-preview p {
 	color: rgb(170,170,170);
 	line-height: 1.6;
@@ -269,6 +274,10 @@ a.Navigation-Links {
 }
 
 @media (min-width: 570px) {
+	.flex {
+		display: flex;
+		justify-content: flex-start;
+	}
 	.Content{
 		padding: 20px;
 		margin:auto;
@@ -277,12 +286,30 @@ a.Navigation-Links {
 	.article-subtitle{
 		text-align: left;
 	}
+	.wrapper{
+		width:550px;
 
+	}
 	.article-preview {
 		width: 550px;
 		/*text-align:center;*/
 		margin:auto;	
 	}
+
+	.article-preview-image{
+		width: 180px;
+		height: 180px;
+		background-color:rgb(244,242,240);
+		margin-right: 20px;
+		margin-top: 20px;
+		border: solid rgb(84,84,84) 1px;
+
+	}
+
+	.preview-link{
+		width: 66.6%;
+	}
+
 	.article-index{
 		text-align: left;
 		margin:auto;
