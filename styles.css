@@ -1,3 +1,11 @@
+/*Possible Color Scheme
+Navy Blue: #18121E
+Gun Metal: #233237
+Rusty Red: #984B43
+Warm Yellow: #EAC67A
+
+*/
+
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -77,7 +85,6 @@ h2.indexYear{
 }
 
 .hero-img-about{
-	object-fit: fill;
 	width:100%;
 	background: url("/images/about-hero.jpg") no-repeat;
 	height: 300px;
@@ -86,7 +93,6 @@ h2.indexYear{
 }
 
 .hero-img{
-	object-fit: fill;
 	width:100%;
 	background: url("/images/hero.jpg") no-repeat;
 	height: 300px;
@@ -283,20 +289,28 @@ a.Navigation-Links {
 	.Content{
 		padding: 20px;
 		margin:auto;
-		width:550px;
+		max-width: 900px;
 	}	
 	.article-subtitle{
 		text-align: left;
 	}
 	.wrapper{
-		width:535px;
+		/*width:535px;*/
 
 	}
 	.article-preview {
-		width: 535px;
+		/*width: 535px;*/
 		/*text-align:center;*/
 		margin:auto;	
 	}
+
+/*Possible Color Scheme
+Navy Blue: #18121E
+Gun Metal: #233237
+Rusty Red: #984B43
+Warm Yellow: #EAC67A
+
+*/
 
 	.article-preview-image{
 		width: 180px;
@@ -311,7 +325,7 @@ a.Navigation-Links {
 	}
 
 	.preview-link{
-		width: 66.6%;
+		/*width: 66.6%;*/
 	}
 
 	.article-index{
@@ -344,9 +358,7 @@ a.Navigation-Links {
 	}
 
 	.Hamburger-Holder{
-		float:right;
-		margin-top: -9999px;
-		cursor: pointer;
+		display:none;
 	}
 
 
