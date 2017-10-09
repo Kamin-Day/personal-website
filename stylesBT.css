@@ -21,9 +21,7 @@ body{
 }
 
 
-.Content{
-	padding: 20px;
-}
+
 /*#Content-Title*/
 
 .divide{
@@ -98,9 +96,8 @@ body{
 .Hello{
 	background-color: rgb(21,169,225);
 	text-align: center;
-	height: 300px;
+	height: 200px;
 	padding-top:25px;
-	z-index: 2;
 }
 
 .cloud{
@@ -125,19 +122,32 @@ body{
 .Content{
 	background: white;
 	position: relative;
+	padding: 20px;
+}
 
+.about{
+	position: relative;
 }
 
 .me{
 	float:left;
+	width:45%;
 }
 
 .you{
 	float:right;
+	width:45%;
 }
 
+.examples{
+	text-align: center;
+}
 
-
+.underline_text {
+      border-bottom: solid 2px #000000;
+      display: inline;
+      padding-bottom: 3px;
+}
 
 @media (min-width: 570px) {
 	.flex {
