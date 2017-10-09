@@ -176,7 +176,6 @@ h2.indexYear{
 .Page-Title{	
 	float: left;
 	cursor: pointer;
-	
 }
 
 .Header-Main-Title{
@@ -309,6 +308,72 @@ a.Navigation-Links {
 	color: rgb(64,64,64);
 }
 
+.BT {
+	background-color: rgb(7,36,78);
+
+}
+
+.Left-Top-Img {
+	float: left;
+    height: 160px;
+    border-right: solid white 10px;
+}
+
+.Right-Top-Img {
+	float: right;
+	margin-top:25px;
+}
+
+.Page-Header-BT{
+	background-color: rgb(21,169,225);
+	position: relative;
+	z-index: 1;
+	padding-right: 25px;
+	margin-bottom: none;
+
+}
+
+.Header-BT{
+	text-align: center;
+	color:white;
+}
+
+.Tab-Divide{
+	position: inline;
+	width:100%;
+	text-align: center;
+	height: 40px;
+
+}
+
+.Tab-Devide ul li {
+	color:white;
+}
+.Hello{
+	background-color: rgb(21,169,225);
+	text-align: center;
+	padding: 3em auto;
+}
+
+.Hello h1{
+	color: white;
+}
+
+.Hello h3{
+	color:white;
+	font-size: 1.25em;
+	padding:none;
+	margin:none;
+}
+
+.Header-Img{
+
+}
+
+
+
+
+
 @media (min-width: 570px) {
 	.flex {
 		display: flex;
@@ -406,6 +471,7 @@ Warm Yellow: #EAC67A
 		display: block;
 		padding-top:10px;
 	}
+
 
 }
 
